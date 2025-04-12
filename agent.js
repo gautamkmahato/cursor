@@ -595,7 +595,7 @@ rl.question('Enter your input: ', async (message) => {
         }
 
         
-        console.log(`step: "${jsonObject.step}", content: "${jsonObject.content}"`);
+        console.log(`o ${jsonObject.content}`);
 
         // Add current step to message history
         messages.push({
@@ -652,7 +652,7 @@ rl.question('Enter your input: ', async (message) => {
             });
 
             const observeObj = JSON.parse(observeJson);
-            console.log(`step: "${observeObj.step}", content: "${observeObj.content}"`);
+            console.log(`o ${observeObj.content}`);
 
             messages.push({
                 role: 'model',
