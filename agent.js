@@ -336,6 +336,72 @@ async function create_vite_app() {
     console.log(`Vite Vanilla app "${appName}" is ready.`);
 }
 
+async function create_html_css_js_project() {
+    const appName = "html-css-js-app";
+    const appPath = path.join(process.cwd(), appName);
+
+    // Create base project folder
+    if (!fs.existsSync(appPath)) {
+        fs.mkdirSync(appPath, { recursive: true });
+        logToFile(`📁 Created base folder: ${appPath}`);
+    }
+
+    // Folders to create
+    const folders = [
+        "css",
+        "js",
+        "assets"
+    ];
+
+    // Files to create with basic content
+    const files = {
+        "index.html": `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <script src="js/script.js"></script>
+</body>
+        </html>`,
+
+                "css/style.css": `body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }`,
+
+                "js/script.js": `document.addEventListener('DOMContentLoaded', () => {
+            console.log("🚀 Page loaded!");
+        });`,
+
+                "README.md": `# HTML, CSS, JS Project
+
+        This is a basic static website project structure.`
+    };
+
+    // Create folders
+    for (const folder of folders) {
+        const folderPath = path.join(appPath, folder);
+        fs.mkdirSync(folderPath, { recursive: true });
+        logToFile(`📁 Created folder: ${folderPath}`);
+        console.log(`📁 Created: ${folder}`);
+    }
+
+    // Create files with content
+    for (const [filePath, content] of Object.entries(files)) {
+        const fullPath = path.join(appPath, filePath);
+        fs.writeFileSync(fullPath, content);
+        logToFile(`📄 Created file: ${fullPath}`);
+        console.log(`📄 Created: ${filePath}`);
+    }
+
+    console.log(`🎉 Basic HTML/CSS/JS project "${appName}" is ready.`);
+}
+
 async function readFileContent(filePath) {
     const absolutePath = path.join(process.cwd(), filePath);
     if (!fs.existsSync(absolutePath)) {
@@ -440,6 +506,7 @@ const tools = {
     create_vite_app,
     readFileContent,
     updateFileContent,
+    create_html_css_js_project
 };
 
 //  AI Agent Model
@@ -492,6 +559,7 @@ const model = genAI.getGenerativeModel({
         - create_next_app: execute the function 'create_next_app'
         - create_angular_app: execute the function 'create_angular_app'
         - create_vite_app: execute the function 'create_vite_app'
+        - create_html_css_js_project: execute the function 'create_html_css_js_project'
         - readFileContent: takes a relative file path as a string input and returns the content of the file as a string.
         - updateFileContent: takes an object with two properties:
             - filePath (string): the relative path of the file to update
