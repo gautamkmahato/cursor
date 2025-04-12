@@ -72,25 +72,25 @@ async function executeCommand(command, cwd = process.cwd()) {
     try {
 
         if (blockedCommands.some((pattern) => pattern.test(command))) {
-            const msg = `❌ Blocked dangerous command: ${command}`;
+            const msg = `Blocked dangerous command: ${command}`;
             logToFile(msg);
             return msg;
         }
 
         const { stdout, stderr } = await execPromise(command, { cwd });
 
-        const successMsg = `✅ Command executed: ${command}\n📁 In: ${cwd}\n➡️ Output: ${stdout || 'No output'}`;
+        const successMsg = `Command executed: ${command}\n In: ${cwd}\n Output: ${stdout || 'No output'}`;
         logToFile(successMsg);
 
         if (stderr) {
-            const errMsg = `⚠️ Stderr: ${stderr}`;
+            const errMsg = ` Stderr: ${stderr}`;
             logToFile(errMsg);
             return errMsg;
         }
 
         return successMsg;
     } catch (err) {
-        const errMsg = `❌ Error: ${err.error?.message || err.message}`;
+        const errMsg = `Error: ${err.error?.message || err.message}`;
         logToFile(errMsg);
         return errMsg;
     }
@@ -112,8 +112,8 @@ async function create_node_express_backend() {
         logToFile(`📁 Created project folder: ${appPath}`);
         console.log(`📁 Created: ${appPath}`);
     } else {
-        logToFile(`⚠️ Folder already exists: ${appPath}`);
-        console.log(`⚠️ Folder already exists: ${appPath}`);
+        logToFile(`Folder already exists: ${appPath}`);
+        console.log(`Folder already exists: ${appPath}`);
     }
 
     // Step 2: Create folder structure inside the backend app
@@ -157,7 +157,7 @@ async function create_node_express_backend() {
         console.log(`📄 Created file: ${file}`);
     }
 
-    console.log(`🚀 Node.js Express backend structure created in "${appName}"`);
+    console.log(`Node.js Express backend structure created in "${appName}"`);
 }
 
 async function create_react_app() {
@@ -207,7 +207,7 @@ async function create_react_app() {
         console.log(`📄 Created file: ${file}`);
     }
 
-    console.log(`✅ React app "${appName}" created successfully!`);
+    console.log(`React app "${appName}" created successfully!`);
 
 }
 
@@ -250,7 +250,7 @@ async function create_next_app() {
         console.log(`📄 Created: ${file}`);
     }
 
-    console.log(`🚀 Next.js app "${appName}" is ready.`);
+    console.log(`Next.js app "${appName}" is ready.`);
 }
 
 async function create_angular_app() {
@@ -291,7 +291,7 @@ async function create_angular_app() {
         console.log(`📄 Created: ${file}`);
     }
 
-    console.log(`🚀 Angular app "${appName}" is ready.`);
+    console.log(`Angular app "${appName}" is ready.`);
 }
 
 async function create_vite_app() {
@@ -333,26 +333,26 @@ async function create_vite_app() {
         console.log(`📄 Created: ${file}`);
     }
 
-    console.log(`⚡ Vite Vanilla app "${appName}" is ready.`);
+    console.log(`Vite Vanilla app "${appName}" is ready.`);
 }
 
 async function readFileContent(filePath) {
     const absolutePath = path.join(process.cwd(), filePath);
     if (!fs.existsSync(absolutePath)) {
-        const errorMsg = `❌ File not found: ${filePath}`;
+        const errorMsg = `File not found: ${filePath}`;
         logToFile(errorMsg);
         return errorMsg;
     }
 
     const content = fs.readFileSync(absolutePath, 'utf-8');
-    logToFile(`📖 Read file: ${filePath}`);
+    logToFile(`Read file: ${filePath}`);
     return content;
 }
 
 export async function updateFileContent(input) {
     if (!input || !input.filePath || !input.newContent) {
-        console.error("❌ Invalid input: Expected { filePath, newContent }");
-        return "❌ Invalid input, could not update the file.";
+        console.error("Invalid input: Expected { filePath, newContent }");
+        return "Invalid input, could not update the file.";
     }
 
     const { filePath, newContent } = input;
@@ -361,17 +361,17 @@ export async function updateFileContent(input) {
         const fullPath = path.resolve(__dirname, filePath); // Absolute path
         const dirPath = path.dirname(fullPath);             // Folder path
 
-        // ✅ Ensure directory exists
+        //  Ensure directory exists
         await fs.promises.mkdir(dirPath, { recursive: true });
 
-        // ✅ Write to file
+        //  Write to file
         await fs.promises.writeFile(fullPath, newContent, 'utf-8');
 
-        console.log(`✅ File updated: ${fullPath}`);
-        return `✅ The file \`${filePath}\` has been created/updated successfully.`;
+        console.log(` File updated: ${fullPath}`);
+        return ` The file \`${filePath}\` has been created/updated successfully.`;
     } catch (error) {
-        console.error(`❌ Error updating file: ${error.message}`);
-        return `❌ Error: Could not update the file at ${filePath}`;
+        console.error(` Error updating file: ${error.message}`);
+        return ` Error: Could not update the file at ${filePath}`;
     }
 }
 
@@ -392,41 +392,41 @@ async function executeAllCommands() {
 }
 
 
-// 🔧 Function: Get weather info
+//  Function: Get weather info
 async function get_weather(city = '') {
     const response = await fetch(`https://wttr.in/${city.toLowerCase()}?format=%c+%t`);
     const result = await response.text();
     return result.trim();
 }
 
-// 🔧 Function: Create folder
+//  Function: Create folder
 async function createFolder(folderName) {
     const folderPath = path.join(process.cwd(), folderName);
     if (!fs.existsSync(folderPath)) {
         fs.mkdirSync(folderPath);
-        return `✅ Folder '${folderName}' created successfully.`;
+        return ` Folder '${folderName}' created successfully.`;
     } else {
-        return `⚠️ Folder '${folderName}' already exists.`;
+        return ` Folder '${folderName}' already exists.`;
     }
 }
 
 async function createFileInFolder(folderName, fileName, content = '') {
-  const folderPath = path.join(process.cwd(), folderName);
-  const filePath = path.join(folderPath, fileName);
+    const folderPath = path.join(process.cwd(), folderName);
+    const filePath = path.join(folderPath, fileName);
 
-  // Create folder if it doesn't exist
-  if (!fs.existsSync(folderPath)) {
-    fs.mkdirSync(folderPath);
-    console.log(`📁 Created folder: ${folderPath}`);
-  }
+    // Create folder if it doesn't exist
+    if (!fs.existsSync(folderPath)) {
+        fs.mkdirSync(folderPath);
+        console.log(`📁 Created folder: ${folderPath}`);
+    }
 
-  // Create file (or overwrite if exists)
-  fs.writeFileSync(filePath, content);
-  console.log(`📄 Created file: ${filePath}`);
+    // Create file (or overwrite if exists)
+    fs.writeFileSync(filePath, content);
+    console.log(`📄 Created file: ${filePath}`);
 }
 
 
-// 🧠 Tool map for dynamic function calls
+//  Tool map for dynamic function calls
 const tools = {
     get_weather,
     createFolder,
@@ -442,7 +442,7 @@ const tools = {
     updateFileContent,
 };
 
-// 🧠 AI Agent Model
+//  AI Agent Model
 const model = genAI.getGenerativeModel({
     model: "gemini-2.0-flash",
     systemInstruction: `
@@ -548,7 +548,7 @@ const model = genAI.getGenerativeModel({
     `,
 });
 
-// 🔧 Model generation config
+//  Model generation config
 const generationConfig = {
     temperature: 1,
     topP: 0.95,
@@ -570,12 +570,11 @@ const messages = [
 
 
 const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
+    input: process.stdin,
+    output: process.stdout,
 });
 
-rl.question('Enter your input: ', async(message) => {
-    // Main execution loop
+rl.question('Enter your input: ', async (message) => {
 
     const chatSession = model.startChat({
         generationConfig,
@@ -591,11 +590,11 @@ rl.question('Enter your input: ', async(message) => {
         try {
             jsonObject = JSON.parse(cleaned);
         } catch (e) {
-            console.error("❌ Failed to parse JSON:", cleaned);
+            console.error(" Failed to parse JSON:", cleaned);
             break;
         }
 
-        // 🖨️ Log each step in single line
+        
         console.log(`step: "${jsonObject.step}", content: "${jsonObject.content}"`);
 
         // Add current step to message history
@@ -612,22 +611,22 @@ rl.question('Enter your input: ', async(message) => {
         if (jsonObject.step === 'action') {
             const fnName = jsonObject.function;
             let input = jsonObject.input;
-        
+
             if (!tools[fnName]) {
-                console.error(`❌ Function '${fnName}' is not defined.`);
+                console.error(` Function '${fnName}' is not defined.`);
                 break;
             }
-        
+
             try {
-                input = JSON.parse(input); // Might still be a string
+                input = JSON.parse(input);
                 console.log("----input----: ", input);
             } catch (_) {
                 // Leave input as-is for simple string tools
             }
-        
+
             let output;
-        
-            // Ensure the function handles object input (key-value pair)
+
+
             if (typeof input === 'object' && !Array.isArray(input)) {
                 const { filePath, newContent } = input;
                 output = await tools[fnName]({ filePath, newContent });
@@ -636,30 +635,28 @@ rl.question('Enter your input: ', async(message) => {
             } else {
                 output = await tools[fnName](input);
             }
-        
+
             const observeJson = JSON.stringify({
                 step: "observe",
                 content: `Tool returned: ${output}`,
                 function: "",
                 output: output
             });
-        
+
             const observeObj = JSON.parse(observeJson);
             console.log(`step: "${observeObj.step}", content: "${observeObj.content}"`);
-        
+
             messages.push({
                 role: 'model',
                 parts: [{ text: observeJson }],
             });
-        
+
             continue;
         }
-        
+
     }
 
-    rl.close(); // Close the readline interface after processing
+    rl.close(); 
 });
 
 
-
-//run();
