@@ -1,0 +1,341 @@
+[2025-04-12T12:31:06.251Z] 📁 Created project folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend
+[2025-04-12T12:31:06.256Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\routes
+[2025-04-12T12:31:06.258Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\controllers
+[2025-04-12T12:31:06.261Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\models
+[2025-04-12T12:31:06.265Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\middlewares
+[2025-04-12T12:31:06.268Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\views
+[2025-04-12T12:31:06.271Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\public
+[2025-04-12T12:31:06.274Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\config
+[2025-04-12T12:31:06.277Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\server.js
+[2025-04-12T12:31:06.281Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\.env
+[2025-04-12T12:31:06.284Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\package.json
+[2025-04-12T12:31:06.287Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\routes\index.js
+[2025-04-12T12:31:06.289Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\controllers\userController.js
+[2025-04-12T12:31:06.292Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\models\userModel.js
+[2025-04-12T12:31:06.296Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\middlewares\authMiddleware.js
+[2025-04-12T12:31:06.299Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\views\index.ejs
+[2025-04-12T12:31:06.301Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\public\style.css
+[2025-04-12T12:31:06.304Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\config\dbConfig.js
+[2025-04-12T12:31:06.306Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\README.md
+[2025-04-12T12:31:06.309Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\.gitignore
+[2025-04-12T12:31:49.058Z] ❌ File not found: node-express-backend/main.js
+[2025-04-12T12:33:17.503Z] 📁 Created project folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend
+[2025-04-12T12:33:17.511Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\routes
+[2025-04-12T12:33:17.514Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\controllers
+[2025-04-12T12:33:17.518Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\models
+[2025-04-12T12:33:17.521Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\middlewares
+[2025-04-12T12:33:17.526Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\views
+[2025-04-12T12:33:17.530Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\public
+[2025-04-12T12:33:17.534Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\config
+[2025-04-12T12:33:17.539Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\server.js
+[2025-04-12T12:33:17.544Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\.env
+[2025-04-12T12:33:17.547Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\package.json
+[2025-04-12T12:33:17.551Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\routes\index.js
+[2025-04-12T12:33:17.556Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\controllers\userController.js
+[2025-04-12T12:33:17.561Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\models\userModel.js
+[2025-04-12T12:33:17.564Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\middlewares\authMiddleware.js
+[2025-04-12T12:33:17.569Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\views\index.ejs
+[2025-04-12T12:33:17.574Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\public\style.css
+[2025-04-12T12:33:17.580Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\config\dbConfig.js
+[2025-04-12T12:33:17.584Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\README.md
+[2025-04-12T12:33:17.590Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\.gitignore
+[2025-04-12T12:34:02.074Z] 📖 Read file: node-express-backend/server.js
+[2025-04-12T12:35:01.977Z] 📖 Read file: node-express-backend/server.js
+[2025-04-12T12:35:47.903Z] ✅ Command executed: npm create vite@latest my-react-app -- --template react
+📁 In: C:\Users\GA20243764\Desktop\next apps\gemini
+➡️ Output: [90m│[39m
+[32m◇[39m  Scaffolding project in C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app...
+[90m│[39m
+[90m└[39m  Done. Now run:
+
+  cd my-react-app
+  npm install
+  npm run dev
+
+
+[2025-04-12T12:37:29.072Z] ✅ Command executed: npm install
+📁 In: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app
+➡️ Output: 
+added 150 packages, and audited 151 packages in 1m
+
+30 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+[2025-04-12T12:37:29.081Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\components
+[2025-04-12T12:37:29.089Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\pages
+[2025-04-12T12:37:29.096Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\assets
+[2025-04-12T12:37:29.111Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\hooks
+[2025-04-12T12:37:29.122Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\utils
+[2025-04-12T12:37:29.132Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\components\Header.jsx
+[2025-04-12T12:37:29.150Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\pages\Home.jsx
+[2025-04-12T12:37:29.162Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\hooks\useExample.js
+[2025-04-12T12:37:29.187Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\utils\helpers.js
+[2025-04-12T12:37:29.200Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\styles.css
+[2025-04-12T12:37:29.262Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\.env
+[2025-04-12T12:37:29.293Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\README.md
+[2025-04-12T12:42:50.822Z] 📁 Created project folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend
+[2025-04-12T12:42:50.827Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\routes
+[2025-04-12T12:42:50.830Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\controllers
+[2025-04-12T12:42:50.832Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\models
+[2025-04-12T12:42:50.834Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\middlewares
+[2025-04-12T12:42:50.836Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\views
+[2025-04-12T12:42:50.838Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\public
+[2025-04-12T12:42:50.840Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\config
+[2025-04-12T12:42:50.842Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\server.js
+[2025-04-12T12:42:50.847Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\.env
+[2025-04-12T12:42:50.849Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\package.json
+[2025-04-12T12:42:50.851Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\routes\index.js
+[2025-04-12T12:42:50.854Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\controllers\userController.js
+[2025-04-12T12:42:50.856Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\models\userModel.js
+[2025-04-12T12:42:50.858Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\middlewares\authMiddleware.js
+[2025-04-12T12:42:50.862Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\views\index.ejs
+[2025-04-12T12:42:50.864Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\public\style.css
+[2025-04-12T12:42:50.869Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\config\dbConfig.js
+[2025-04-12T12:42:50.873Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\README.md
+[2025-04-12T12:42:50.877Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\.gitignore
+[2025-04-12T12:43:40.600Z] 📖 Read file: node-express-backend/server.js
+[2025-04-12T12:44:19.207Z] ✅ Command executed: npm create vite@latest my-react-app -- --template react
+📁 In: C:\Users\GA20243764\Desktop\next apps\gemini
+➡️ Output: [90m│[39m
+[32m◇[39m  Scaffolding project in C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app...
+[90m│[39m
+[90m└[39m  Done. Now run:
+
+  cd my-react-app
+  npm install
+  npm run dev
+
+
+[2025-04-12T12:46:13.911Z] ✅ Command executed: npm install
+📁 In: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app
+➡️ Output: 
+added 150 packages, and audited 151 packages in 2m
+
+30 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+[2025-04-12T12:46:13.918Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\components
+[2025-04-12T12:46:13.925Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\pages
+[2025-04-12T12:46:13.933Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\assets
+[2025-04-12T12:46:13.942Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\hooks
+[2025-04-12T12:46:13.949Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\utils
+[2025-04-12T12:46:13.958Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\components\Header.jsx
+[2025-04-12T12:46:13.967Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\pages\Home.jsx
+[2025-04-12T12:46:13.980Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\hooks\useExample.js
+[2025-04-12T12:46:13.989Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\utils\helpers.js
+[2025-04-12T12:46:13.998Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\styles.css
+[2025-04-12T12:46:14.010Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\.env
+[2025-04-12T12:46:14.029Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\README.md
+[2025-04-12T12:47:12.816Z] 📖 Read file: node-express-backend/server.js
+[2025-04-12T12:52:49.421Z] 📁 Created project folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend
+[2025-04-12T12:52:49.428Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\routes
+[2025-04-12T12:52:49.431Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\controllers
+[2025-04-12T12:52:49.435Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\models
+[2025-04-12T12:52:49.439Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\middlewares
+[2025-04-12T12:52:49.442Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\views
+[2025-04-12T12:52:49.446Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\public
+[2025-04-12T12:52:49.450Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\config
+[2025-04-12T12:52:49.454Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\server.js
+[2025-04-12T12:52:49.457Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\.env
+[2025-04-12T12:52:49.461Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\package.json
+[2025-04-12T12:52:49.464Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\routes\index.js
+[2025-04-12T12:52:49.468Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\controllers\userController.js
+[2025-04-12T12:52:49.473Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\models\userModel.js
+[2025-04-12T12:52:49.478Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\middlewares\authMiddleware.js
+[2025-04-12T12:52:49.484Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\views\index.ejs
+[2025-04-12T12:52:49.489Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\public\style.css
+[2025-04-12T12:52:49.495Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\config\dbConfig.js
+[2025-04-12T12:52:49.498Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\README.md
+[2025-04-12T12:52:49.503Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\.gitignore
+[2025-04-12T12:53:41.866Z] 📖 Read file: node-express-backend/server.js
+[2025-04-12T12:54:36.740Z] ✅ Command executed: npm create vite@latest my-react-app -- --template react
+📁 In: C:\Users\GA20243764\Desktop\next apps\gemini
+➡️ Output: [90m│[39m
+[32m◇[39m  Scaffolding project in C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app...
+[90m│[39m
+[90m└[39m  Done. Now run:
+
+  cd my-react-app
+  npm install
+  npm run dev
+
+
+[2025-04-12T12:57:13.959Z] ✅ Command executed: npm install
+📁 In: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app
+➡️ Output: 
+added 150 packages, and audited 151 packages in 2m
+
+30 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+[2025-04-12T12:57:13.970Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\components
+[2025-04-12T12:57:14.041Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\pages
+[2025-04-12T12:57:14.053Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\assets
+[2025-04-12T12:57:14.287Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\hooks
+[2025-04-12T12:57:14.675Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\utils
+[2025-04-12T12:57:14.923Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\components\Header.jsx
+[2025-04-12T12:57:15.116Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\pages\Home.jsx
+[2025-04-12T12:57:15.481Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\hooks\useExample.js
+[2025-04-12T12:57:15.531Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\utils\helpers.js
+[2025-04-12T12:57:15.720Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\styles.css
+[2025-04-12T12:57:15.851Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\.env
+[2025-04-12T12:57:15.904Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\README.md
+[2025-04-12T12:59:21.108Z] ✅ Command executed: npm create vite@latest my-react-app -- --template react
+📁 In: C:\Users\GA20243764\Desktop\next apps\gemini
+➡️ Output: [90m│[39m
+[32m◇[39m  Scaffolding project in C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app...
+[90m│[39m
+[90m└[39m  Done. Now run:
+
+  cd my-react-app
+  npm install
+  npm run dev
+
+
+[2025-04-12T13:00:46.425Z] ✅ Command executed: npm install
+📁 In: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app
+➡️ Output: 
+added 150 packages, and audited 151 packages in 1m
+
+30 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+[2025-04-12T13:00:46.438Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\components
+[2025-04-12T13:00:46.450Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\pages
+[2025-04-12T13:00:46.460Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\assets
+[2025-04-12T13:00:46.470Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\hooks
+[2025-04-12T13:00:46.483Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\utils
+[2025-04-12T13:00:46.494Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\components\Header.jsx
+[2025-04-12T13:00:46.507Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\pages\Home.jsx
+[2025-04-12T13:00:46.519Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\hooks\useExample.js
+[2025-04-12T13:00:46.528Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\utils\helpers.js
+[2025-04-12T13:00:46.540Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\styles.css
+[2025-04-12T13:00:46.553Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\.env
+[2025-04-12T13:00:46.564Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\README.md
+[2025-04-12T13:04:00.600Z] ✅ Command executed: npm create vite@latest my-react-app -- --template react
+📁 In: C:\Users\GA20243764\Desktop\next apps\gemini
+➡️ Output: [90m│[39m
+[32m◇[39m  Scaffolding project in C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app...
+[90m│[39m
+[90m└[39m  Done. Now run:
+
+  cd my-react-app
+  npm install
+  npm run dev
+
+
+[2025-04-12T13:04:00.606Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\components
+[2025-04-12T13:04:00.609Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\pages
+[2025-04-12T13:04:00.611Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\assets
+[2025-04-12T13:04:00.613Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\hooks
+[2025-04-12T13:04:00.615Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\utils
+[2025-04-12T13:04:00.617Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\components\Header.jsx
+[2025-04-12T13:04:00.620Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\pages\Home.jsx
+[2025-04-12T13:04:00.623Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\hooks\useExample.js
+[2025-04-12T13:04:00.626Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\utils\helpers.js
+[2025-04-12T13:04:00.631Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\styles.css
+[2025-04-12T13:04:00.634Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\.env
+[2025-04-12T13:04:00.638Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\README.md
+[2025-04-12T13:05:02.183Z] 📖 Read file: src/components/Navbar.jsx
+[2025-04-12T13:06:00.995Z] ❌ File not found: my-react-app/src/components/Navbar.jsx
+[2025-04-12T13:08:30.157Z] 📁 Created project folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend
+[2025-04-12T13:08:30.167Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\routes
+[2025-04-12T13:08:30.173Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\controllers
+[2025-04-12T13:08:30.178Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\models
+[2025-04-12T13:08:30.183Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\middlewares
+[2025-04-12T13:08:30.188Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\views
+[2025-04-12T13:08:30.193Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\public
+[2025-04-12T13:08:30.199Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\config
+[2025-04-12T13:08:30.204Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\server.js
+[2025-04-12T13:08:30.209Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\.env
+[2025-04-12T13:08:30.216Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\package.json
+[2025-04-12T13:08:30.223Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\routes\index.js
+[2025-04-12T13:08:30.230Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\controllers\userController.js
+[2025-04-12T13:08:30.236Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\models\userModel.js
+[2025-04-12T13:08:30.243Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\middlewares\authMiddleware.js
+[2025-04-12T13:08:30.249Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\views\index.ejs
+[2025-04-12T13:08:30.257Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\public\style.css
+[2025-04-12T13:08:30.264Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\config\dbConfig.js
+[2025-04-12T13:08:30.271Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\README.md
+[2025-04-12T13:08:30.278Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\.gitignore
+[2025-04-12T13:09:18.404Z] 📖 Read file: node-express-backend/server.js
+[2025-04-12T13:10:04.199Z] ✅ Command executed: npm create vite@latest my-react-app -- --template react
+📁 In: C:\Users\GA20243764\Desktop\next apps\gemini
+➡️ Output: [90m│[39m
+[32m◇[39m  Scaffolding project in C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app...
+[90m│[39m
+[90m└[39m  Done. Now run:
+
+  cd my-react-app
+  npm install
+  npm run dev
+
+
+[2025-04-12T13:10:04.217Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\components
+[2025-04-12T13:10:04.228Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\pages
+[2025-04-12T13:10:04.237Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\assets
+[2025-04-12T13:10:04.250Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\hooks
+[2025-04-12T13:10:04.263Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\utils
+[2025-04-12T13:10:04.286Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\components\Header.jsx
+[2025-04-12T13:10:04.307Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\pages\Home.jsx
+[2025-04-12T13:10:04.337Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\hooks\useExample.js
+[2025-04-12T13:10:04.352Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\utils\helpers.js
+[2025-04-12T13:10:04.388Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\styles.css
+[2025-04-12T13:10:04.415Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\.env
+[2025-04-12T13:10:04.669Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\README.md
+[2025-04-12T13:10:59.810Z] ❌ File not found: my-react-app/src/components/Navbar.jsx
+[2025-04-12T13:14:54.415Z] 📁 Created project folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend
+[2025-04-12T13:14:54.422Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\routes
+[2025-04-12T13:14:54.426Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\controllers
+[2025-04-12T13:14:54.429Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\models
+[2025-04-12T13:14:54.431Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\middlewares
+[2025-04-12T13:14:54.433Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\views
+[2025-04-12T13:14:54.436Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\public
+[2025-04-12T13:14:54.439Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\config
+[2025-04-12T13:14:54.443Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\server.js
+[2025-04-12T13:14:54.446Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\.env
+[2025-04-12T13:14:54.449Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\package.json
+[2025-04-12T13:14:54.451Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\routes\index.js
+[2025-04-12T13:14:54.454Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\controllers\userController.js
+[2025-04-12T13:14:54.456Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\models\userModel.js
+[2025-04-12T13:14:54.460Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\middlewares\authMiddleware.js
+[2025-04-12T13:14:54.463Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\views\index.ejs
+[2025-04-12T13:14:54.468Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\public\style.css
+[2025-04-12T13:14:54.472Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\config\dbConfig.js
+[2025-04-12T13:14:54.475Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\README.md
+[2025-04-12T13:14:54.478Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\node-express-backend\.gitignore
+[2025-04-12T13:15:33.018Z] 📖 Read file: node-express-backend/server.js
+[2025-04-12T13:16:24.367Z] ✅ Command executed: npm create vite@latest my-react-app -- --template react
+📁 In: C:\Users\GA20243764\Desktop\next apps\gemini
+➡️ Output: [90m│[39m
+[32m◇[39m  Scaffolding project in C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app...
+[90m│[39m
+[90m└[39m  Done. Now run:
+
+  cd my-react-app
+  npm install
+  npm run dev
+
+
+[2025-04-12T13:16:24.380Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\components
+[2025-04-12T13:16:24.387Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\pages
+[2025-04-12T13:16:24.393Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\assets
+[2025-04-12T13:16:24.400Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\hooks
+[2025-04-12T13:16:24.407Z] 📁 Created folder: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\utils
+[2025-04-12T13:16:24.418Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\components\Header.jsx
+[2025-04-12T13:16:24.426Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\pages\Home.jsx
+[2025-04-12T13:16:24.434Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\hooks\useExample.js
+[2025-04-12T13:16:24.448Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\utils\helpers.js
+[2025-04-12T13:16:24.457Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\src\styles.css
+[2025-04-12T13:16:24.469Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\.env
+[2025-04-12T13:16:24.486Z] 📄 Created file: C:\Users\GA20243764\Desktop\next apps\gemini\my-react-app\README.md
+[2025-04-12T13:17:15.950Z] ❌ File not found: my-react-app/src/components/Navbar.jsx
+[2025-04-12T13:18:18.567Z] 📖 Read file: node-express-backend/server.js
