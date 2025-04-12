@@ -628,8 +628,16 @@ rl.question('Enter your input: ', async (message) => {
 
 
             if (typeof input === 'object' && !Array.isArray(input)) {
-                const { filePath, newContent } = input;
-                output = await tools[fnName]({ filePath, newContent });
+                // Handle special cases based on function
+                if (fnName === 'updateFileContent') {
+                    const { filePath, newContent } = input;
+                    output = await tools[fnName]({ filePath, newContent });
+                } else if (fnName === 'createFileInFolder') {
+                    const { folderName, fileName, content } = input;
+                    output = await tools[fnName](folderName, fileName, content);
+                } else {
+                    output = await tools[fnName](input); // Pass as-is
+                }
             } else if (Array.isArray(input)) {
                 output = await tools[fnName](...input);
             } else {
