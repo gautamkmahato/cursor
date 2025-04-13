@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import fs from 'fs';
 import path from 'path';
@@ -9,12 +11,8 @@ import readline from 'readline';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const apiKey = '';
+const apiKey = 'AIzaSyBPwCzXO66NPLfWA1cd93_Vdxzk26JbUgE';
 const genAI = new GoogleGenerativeAI(apiKey);
-
-
-// Promisify exec for async/await support
-// const execPromise = promisify(exec);
 
 
 // Define the log file path
@@ -35,26 +33,6 @@ const blockedCommands = [
     /format/
 ];
 
-// List of all commands to be executed
-const commands = [
-    "mkdir node-express-backend",
-    "cd node-express-backend",
-    "touch server.js",
-    "touch .env",
-    "touch package.json",
-    "mkdir routes controllers models middlewares views public config",
-    "touch routes/index.js",
-    "touch controllers/userController.js",
-    "touch models/userModel.js",
-    "touch middlewares/authMiddleware.js",
-    "touch views/index.ejs",
-    "touch public/style.css",
-    "touch config/dbConfig.js",
-    "touch README.md",
-    "touch .gitignore"
-];
-
-
 // Your promise wrapper
 function execPromise(command, options = {}) {
     return new Promise((resolve, reject) => {
@@ -72,25 +50,25 @@ async function executeCommand(command, cwd = process.cwd()) {
     try {
 
         if (blockedCommands.some((pattern) => pattern.test(command))) {
-            const msg = `Blocked dangerous command: ${command}`;
+            const msg = `❌ Blocked dangerous command: ${command}`;
             logToFile(msg);
             return msg;
         }
 
         const { stdout, stderr } = await execPromise(command, { cwd });
 
-        const successMsg = `Command executed: ${command}\n In: ${cwd}\n Output: ${stdout || 'No output'}`;
+        const successMsg = `✅ Command executed: ${command}\n📁 In: ${cwd}\n➡️ Output: ${stdout || 'No output'}`;
         logToFile(successMsg);
 
         if (stderr) {
-            const errMsg = ` Stderr: ${stderr}`;
+            const errMsg = `⚠️ Stderr: ${stderr}`;
             logToFile(errMsg);
             return errMsg;
         }
 
         return successMsg;
     } catch (err) {
-        const errMsg = `Error: ${err.error?.message || err.message}`;
+        const errMsg = `❌ Error: ${err.error?.message || err.message}`;
         logToFile(errMsg);
         return errMsg;
     }
@@ -101,9 +79,8 @@ function logToFile(message) {
     fs.appendFileSync(logFilePath, `[${new Date().toISOString()}] ${message}\n`);
 }
 
-
 async function create_node_express_backend() {
-    const appName = "node-express-backend";
+    const appName = "express-app";
     const appPath = path.join(process.cwd(), appName);
 
     // Step 1: Create the base folder
@@ -112,8 +89,8 @@ async function create_node_express_backend() {
         logToFile(`📁 Created project folder: ${appPath}`);
         console.log(`📁 Created: ${appPath}`);
     } else {
-        logToFile(`Folder already exists: ${appPath}`);
-        console.log(`Folder already exists: ${appPath}`);
+        logToFile(`⚠️ Folder already exists: ${appPath}`);
+        console.log(`⚠️ Folder already exists: ${appPath}`);
     }
 
     // Step 2: Create folder structure inside the backend app
@@ -157,11 +134,11 @@ async function create_node_express_backend() {
         console.log(`📄 Created file: ${file}`);
     }
 
-    console.log(`Node.js Express backend structure created in "${appName}"`);
+    console.log(`🚀 Node.js Express backend structure created in "${appName}"`);
 }
 
 async function create_react_app() {
-    const appName = "my-react-app";
+    const appName = "react-app";
     const appPath = path.join(process.cwd(), appName);
 
     // Step 1: Create the React app using Vite
@@ -207,7 +184,7 @@ async function create_react_app() {
         console.log(`📄 Created file: ${file}`);
     }
 
-    console.log(`React app "${appName}" created successfully!`);
+    console.log(`✅ React app "${appName}" created successfully!`);
 
 }
 
@@ -250,7 +227,7 @@ async function create_next_app() {
         console.log(`📄 Created: ${file}`);
     }
 
-    console.log(`Next.js app "${appName}" is ready.`);
+    console.log(`🚀 Next.js app "${appName}" is ready.`);
 }
 
 async function create_angular_app() {
@@ -291,11 +268,11 @@ async function create_angular_app() {
         console.log(`📄 Created: ${file}`);
     }
 
-    console.log(`Angular app "${appName}" is ready.`);
+    console.log(`🚀 Angular app "${appName}" is ready.`);
 }
 
 async function create_vite_app() {
-    const appName = "vite-app";
+    const appName = "react-app";
     const appPath = path.join(process.cwd(), appName);
 
     // Step 1: Create Vite app
@@ -333,11 +310,11 @@ async function create_vite_app() {
         console.log(`📄 Created: ${file}`);
     }
 
-    console.log(`Vite Vanilla app "${appName}" is ready.`);
+    console.log(`⚡ Vite Vanilla app "${appName}" is ready.`);
 }
 
 async function create_html_css_js_project() {
-    const appName = "html-css-js-app";
+    const appName = "my-app";
     const appPath = path.join(process.cwd(), appName);
 
     // Create base project folder
@@ -405,20 +382,20 @@ async function create_html_css_js_project() {
 async function readFileContent(filePath) {
     const absolutePath = path.join(process.cwd(), filePath);
     if (!fs.existsSync(absolutePath)) {
-        const errorMsg = `File not found: ${filePath}`;
+        const errorMsg = `❌ File not found: ${filePath}`;
         logToFile(errorMsg);
         return errorMsg;
     }
 
     const content = fs.readFileSync(absolutePath, 'utf-8');
-    logToFile(`Read file: ${filePath}`);
+    logToFile(`📖 Read file: ${filePath}`);
     return content;
 }
 
-export async function updateFileContent(input) {
+async function updateFileContent(input) {
     if (!input || !input.filePath || !input.newContent) {
-        console.error("Invalid input: Expected { filePath, newContent }");
-        return "Invalid input, could not update the file.";
+        console.error("❌ Invalid input: Expected { filePath, newContent }");
+        return "❌ Invalid input, could not update the file.";
     }
 
     const { filePath, newContent } = input;
@@ -427,27 +404,19 @@ export async function updateFileContent(input) {
         const fullPath = path.resolve(__dirname, filePath); // Absolute path
         const dirPath = path.dirname(fullPath);             // Folder path
 
-        //  Ensure directory exists
+        // ✅ Ensure directory exists
         await fs.promises.mkdir(dirPath, { recursive: true });
 
-        //  Write to file
+        // ✅ Write to file
         await fs.promises.writeFile(fullPath, newContent, 'utf-8');
 
-        console.log(` File updated: ${fullPath}`);
-        return ` The file \`${filePath}\` has been created/updated successfully.`;
+        console.log(`✅ File updated: ${fullPath}`);
+        return `✅ The file \`${filePath}\` has been created/updated successfully.`;
     } catch (error) {
-        console.error(` Error updating file: ${error.message}`);
-        return ` Error: Could not update the file at ${filePath}`;
+        console.error(`❌ Error updating file: ${error.message}`);
+        return `❌ Error: Could not update the file at ${filePath}`;
     }
 }
-
-
-
-
-
-
-
-//////////////////////////////////////////////////////////////////////////
 
 // Execute all commands sequentially
 async function executeAllCommands() {
@@ -457,42 +426,46 @@ async function executeAllCommands() {
     }
 }
 
-
-//  Function: Get weather info
+// Function: Get weather info
 async function get_weather(city = '') {
     const response = await fetch(`https://wttr.in/${city.toLowerCase()}?format=%c+%t`);
     const result = await response.text();
     return result.trim();
 }
 
-//  Function: Create folder
+// Function: Create folder
 async function createFolder(folderName) {
     const folderPath = path.join(process.cwd(), folderName);
     if (!fs.existsSync(folderPath)) {
         fs.mkdirSync(folderPath);
-        return ` Folder '${folderName}' created successfully.`;
+        return `✅ Folder '${folderName}' created successfully.`;
     } else {
-        return ` Folder '${folderName}' already exists.`;
+        return `⚠️ Folder '${folderName}' already exists.`;
     }
 }
 
-async function createFileInFolder(folderName, fileName, content = '') {
-    const folderPath = path.join(process.cwd(), folderName);
-    const filePath = path.join(folderPath, fileName);
-
-    // Create folder if it doesn't exist
-    if (!fs.existsSync(folderPath)) {
-        fs.mkdirSync(folderPath);
-        console.log(`📁 Created folder: ${folderPath}`);
+async function createFileInFolder(folderName, fileName, content) {
+    if (!folderName || !fileName || content === undefined) {
+        console.error("❌ Invalid input to createFileInFolder:", { folderName, fileName, content });
+        return "❌ Invalid input for creating file.";
     }
 
-    // Create file (or overwrite if exists)
-    fs.writeFileSync(filePath, content);
-    console.log(`📄 Created file: ${filePath}`);
+    try {
+        const fullPath = path.join(process.cwd(), folderName, fileName);
+        const dir = path.dirname(fullPath);
+
+        await fs.promises.mkdir(dir, { recursive: true });
+        await fs.promises.writeFile(fullPath, content, 'utf-8');
+
+        console.log(`✅ File created: ${fullPath}`);
+        return `✅ File \`${folderName}/${fileName}\` created successfully.`;
+    } catch (err) {
+        console.error("❌ Error in createFileInFolder:", err);
+        return `❌ Failed to create file: ${err.message}`;
+    }
 }
 
-
-//  Tool map for dynamic function calls
+// Tool map for dynamic function calls
 const tools = {
     get_weather,
     createFolder,
@@ -509,7 +482,7 @@ const tools = {
     create_html_css_js_project
 };
 
-//  AI Agent Model
+// AI Agent Model
 const model = genAI.getGenerativeModel({
     model: "gemini-2.0-flash",
     systemInstruction: `
@@ -524,7 +497,7 @@ const model = genAI.getGenerativeModel({
         - If the user asking to do any changes in react, node, express, angular, vite project use tools readFileContent and updateFileContent to read and update files/content
 
             **Important:** When the user asks to update or create a file in a project (e.g., 'my-react-app, 'node-express-backend), make sure the 'filePath includes the correct project folder prefix.
-
+            **Important:** For simple user query dont call any tool, just send back the response from the LLM
 
         ## 🔁 Reasoning Flow
         1. **Start** – Understand the user’s query and initiate your reasoning.  
@@ -541,6 +514,8 @@ const model = genAI.getGenerativeModel({
         "output": (only for step=observe) the output string from the function
 
         Do not use markdown or code formatting. Return plain JSON only.
+        **Important:** For simple user query dont call any tool, just send back the response from the LLM
+
 
         Availabe tools:
         - get_weather: takes a city name as a string input and returns the current weather of that city.
@@ -558,8 +533,8 @@ const model = genAI.getGenerativeModel({
         - create_react_app: execute the function 'create_react_app'
         - create_next_app: execute the function 'create_next_app'
         - create_angular_app: execute the function 'create_angular_app'
-        - create_vite_app: execute the function 'create_vite_app'
         - create_html_css_js_project: execute the function 'create_html_css_js_project'
+        - create_vite_app: execute the function 'create_vite_app'
         - readFileContent: takes a relative file path as a string input and returns the content of the file as a string.
         - updateFileContent: takes an object with two properties:
             - filePath (string): the relative path of the file to update
@@ -567,6 +542,7 @@ const model = genAI.getGenerativeModel({
 
             **Note:** If readFileContent returns an empty string or minimal content (less than 10 characters), assume the file is empty or new and generate the entire file content from scratch (e.g., a full functional React component).
             **Important:** When the user asks to update or create a file in a project (e.g., 'my-react-app, 'node-express-backend), make sure the 'filePath includes the correct project folder prefix.
+            **Important:** For simple user query dont call any tool, just send back the response from the LLM
 
         
         
@@ -584,19 +560,22 @@ const model = genAI.getGenerativeModel({
         **Action**: Call 'createFolder with "myfolder".
         **Response**: "The folder 'myfolder' has been created."
 
-        2. **Query**: "Run these commands: ['mkdir folder1', 'touch file1.txt']"
+        2. **Query**: "Hi, what is the capital of India"
+        **Response**: "The Capital of India is New Delhi."
+
+        3. **Query**: "Run these commands: ['mkdir folder1', 'touch file1.txt']"
         **Action**: Call 'executeAllCommands with the array of commands.
         **Response**: "The commands were executed successfully. Folder 'folder1' and file 'file1.txt' were created."
 
-        3. **Query**: "Create a node js project"
+        4. **Query**: "Create a node js project"
         **Action**: Call 'create_node_express_backend' function.
         **Response**: "Node Express backend has been created."
 
-        4. **Query**: "Create a react js project"
+        5. **Query**: "Create a react js project"
         **Action**: Call 'create_vite_app' function.
         **Response**: "React App has been created."
 
-        5. **Query**: "Update the src/pages/Home.jsx in my-react-app to include a new heading that says ‘Welcome to the AI App’."
+        6. **Query**: "Update the src/pages/Home.jsx in my-react-app to include a new heading that says ‘Welcome to the AI App’."
         "start": "Understands intent"
         "plan": "Needs to read + modify a file"
         "action" → "call readFileContent with path"
@@ -604,7 +583,7 @@ const model = genAI.getGenerativeModel({
         "action" → "call updateFileContent with new content"
         "output": "Confirms the file is updated"
 
-        6. **Query**: "create a new file Navar in src/components in react project"
+        7. **Query**: "create a new file Navar in src/components in react project"
         "start": "Understands intent"
         "plan": "Needs to read + modify a file"
         "action" → "call readFileContent with path"
@@ -616,7 +595,7 @@ const model = genAI.getGenerativeModel({
     `,
 });
 
-//  Model generation config
+// Model generation config
 const generationConfig = {
     temperature: 1,
     topP: 0.95,
@@ -626,7 +605,7 @@ const generationConfig = {
     responseMimeType: "text/plain",
 };
 
-const message = "update the main.js file in node-express-backend project and add a new express server to fetch user-profiles";
+const message = "";
 
 const messages = [
     {
@@ -635,104 +614,120 @@ const messages = [
     },
 ];
 
-
-
 const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
+  input: process.stdin,
+  output: process.stdout,
 });
 
-rl.question('Enter your input: ', async (message) => {
-
-    const chatSession = model.startChat({
-        generationConfig,
-        history: messages
-    });
-
+async function main() {
     while (true) {
-        const result = await chatSession.sendMessage(message);
-        const raw = await result.response.text();
-        const cleaned = raw.replace(/```json|```/g, '').trim();
-
-        let jsonObject;
-        try {
-            jsonObject = JSON.parse(cleaned);
-        } catch (e) {
-            console.error(" Failed to parse JSON:", cleaned);
-            break;
-        }
-
-        
-        console.log(`o ${jsonObject.content}`);
-
-        // Add current step to message history
-        messages.push({
-            role: 'model',
-            parts: [{ text: cleaned }],
+        // Ask user for a new prompt after full LLM task is done
+        const message = await new Promise((resolve) => {
+            rl.question('Enter prompt: ', resolve);
         });
 
-        // Exit if final output
-        if (jsonObject.step === 'output') {
-            break;
-        }
+        // Handle entire LLM task flow
+        let taskComplete = false;
 
-        if (jsonObject.step === 'action') {
-            const fnName = jsonObject.function;
-            let input = jsonObject.input;
+        while (!taskComplete) {
+            const chatSession = model.startChat({
+                generationConfig,
+                history: messages
+            });
 
-            if (!tools[fnName]) {
-                console.error(` Function '${fnName}' is not defined.`);
+            const result = await chatSession.sendMessage(message);
+            const raw = await result.response.text();
+            const cleaned = raw.replace(/```json|```/g, '').trim();
+
+            let jsonObject;
+            try {
+                jsonObject = JSON.parse(cleaned);
+            } catch (e) {
+                console.error("❌ Failed to parse JSON:", cleaned);
                 break;
             }
 
-            try {
-                input = JSON.parse(input);
-                console.log("----input----: ", input);
-            } catch (_) {
-                // Leave input as-is for simple string tools
-            }
-
-            let output;
-
-
-            if (typeof input === 'object' && !Array.isArray(input)) {
-                // Handle special cases based on function
-                if (fnName === 'updateFileContent') {
-                    const { filePath, newContent } = input;
-                    output = await tools[fnName]({ filePath, newContent });
-                } else if (fnName === 'createFileInFolder') {
-                    const { folderName, fileName, content } = input;
-                    output = await tools[fnName](folderName, fileName, content);
-                } else {
-                    output = await tools[fnName](input); // Pass as-is
-                }
-            } else if (Array.isArray(input)) {
-                output = await tools[fnName](...input);
-            } else {
-                output = await tools[fnName](input);
-            }
-
-            const observeJson = JSON.stringify({
-                step: "observe",
-                content: `Tool returned: ${output}`,
-                function: "",
-                output: output
-            });
-
-            const observeObj = JSON.parse(observeJson);
-            console.log(`o ${observeObj.content}`);
+            if (jsonObject.step === 'output' || jsonObject.step === 'observe') {
+                console.log(`${jsonObject.content}`);
+            }            
 
             messages.push({
                 role: 'model',
-                parts: [{ text: observeJson }],
+                parts: [{ text: cleaned }],
             });
 
-            continue;
+            if (jsonObject.step === 'output') {
+                // Task completed — break the inner loop
+                taskComplete = true;
+                break;
+            }
+
+            if (jsonObject.step === 'action') {
+                const fnName = jsonObject.function;
+                let input = jsonObject.input;
+
+                if (!tools[fnName]) {
+                    console.error(`❌ Function '${fnName}' is not defined.`);
+                    break;
+                }
+
+                try {
+                    input = JSON.parse(input);
+                    //console.log("----input----: ", input);
+                } catch (_) {
+                    // Input might be a plain string
+                }
+
+                let output;
+
+                if (typeof input === 'object' && !Array.isArray(input)) {
+                    if (fnName === 'updateFileContent') {
+                        const { filePath, newContent } = input;
+                        output = await tools[fnName]({ filePath, newContent });
+                    } else if (fnName === 'createFileInFolder') {
+                        const { folderName, fileName, content } = input;
+                    
+                        if (!folderName || !fileName || content === undefined) {
+                            console.error("❌ Missing folderName, fileName, or content in input:", input);
+                            break;
+                        }
+                    
+                        output = await tools[fnName](folderName, fileName, content);
+                    } else {
+                        output = await tools[fnName](input);
+                    }
+                } else if (Array.isArray(input)) {
+                    output = await tools[fnName](...input);
+                } else {
+                    output = await tools[fnName](input);
+                }
+
+                // ✅ Only log the function name and output
+                // console.log(`${fnName}`);
+                console.log(`${output}`);
+
+                const observeJson = JSON.stringify({
+                    step: "observe",
+                    content: `Tool returned: ${output}`,
+                    function: "",
+                    output: output
+                });
+
+                //console.log(`~ ${output}"`);
+
+                messages.push({
+                    role: 'model',
+                    parts: [{ text: observeJson }],
+                });
+
+                // No new input from user yet, loop continues
+                continue;
+            }
         }
-
     }
+}
 
-    rl.close(); 
-});
+
+main()
 
 
